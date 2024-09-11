@@ -1,2 +1,5 @@
 ﻿  PointerPractice.c
+C:\Users\PC\source\repos\PointerPractice\PointerPractice\PointerPractice\PointerPractice.c(34,2): warning C4098: 'swap': 'void' function returning a value
+C:\Users\PC\source\repos\PointerPractice\PointerPractice\PointerPractice\PointerPractice.c(53,24): warning C4013: 'malloc' undefined; assuming extern returning int
+C:\Users\PC\source\repos\PointerPractice\PointerPractice\PointerPractice\PointerPractice.c(53,17): warning C4312: 'type cast': conversion from 'int' to 'char *' of greater size
   PointerPractice.vcxproj -> C:\Users\PC\source\repos\PointerPractice\PointerPractice\x64\Debug\PointerPractice.exe
