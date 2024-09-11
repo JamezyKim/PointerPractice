@@ -5,6 +5,7 @@
 void swap(int* a, int* b);
 int arraySum(int* arr, int size);
 void reverseString(char* str);
+int findMax(int* arr, int size);
 
 int main() {
 
@@ -12,16 +13,34 @@ int main() {
 	int b = 2;
 	swap(&a, &b);
 
-	int arr[] = { 1,2,3,4 };
+	//int arr[] = { 1,2,3,4 };
 	int size = 4;
-	printf("The sum of the array is %d\n",arraySum(arr, size));
+	//printf("The sum of the array is %d\n",arraySum(arr, size));
 
 	char* str = "abcd";
 	reverseString(str);
 
-
+	int arr[] = { 2,7,5,9 };
+	findMax(arr, size);
 
 	return 0;
+}
+
+//Find the maximum element in an array using pointers:
+int findMax(int* arr, int size) {
+
+	int result = 0;
+	int max = 0;
+	
+	for (int i = 0; i < size; i++) {
+		if (max < arr[i]) {
+			max = arr[i];
+		}
+	}
+
+	printf("The maximum number of the array is %d\n", max);
+
+	return result;
 }
 
 //Reverse a string using pointers:
@@ -41,6 +60,7 @@ void reverseString(char* str) {
 	for (int i = 0; i < resultCounter; i++) {
 		printf("%c ", result[i]);
 	}
+	printf("\n");
 
 	return;
 }
