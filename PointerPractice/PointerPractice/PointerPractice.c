@@ -6,6 +6,8 @@ void swap(int* a, int* b);
 int arraySum(int* arr, int size);
 void reverseString(char* str);
 int findMax(int* arr, int size);
+int countVowels(char* str);
+
 
 int main() {
 
@@ -17,13 +19,37 @@ int main() {
 	int size = 4;
 	//printf("The sum of the array is %d\n",arraySum(arr, size));
 
-	char* str = "abcd";
-	reverseString(str);
+	//char* str = "abcd";
+	//reverseString(str);
 
 	int arr[] = { 2,7,5,9 };
 	findMax(arr, size);
 
+	char str[] = { "heellooo" };
+	printf("The number of the vowel in the array is %d", countVowels(str));
+
 	return 0;
+}
+
+//Count the number of vowels in a string using pointers:
+int countVowels(char* str) {
+	int result = 0;
+	int length = strlen(str);
+	int counter = 0;
+	char vowelArr[] = { 'a','e','i','o','u' };
+
+	while (counter < length) {
+		for (int i = 0; i < 5; i++) {
+			if (str[counter] == vowelArr[i]) {
+				result++;
+				break;
+			}
+		}
+		counter++;
+	}
+
+
+	return result;
 }
 
 //Find the maximum element in an array using pointers:
