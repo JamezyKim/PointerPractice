@@ -36,16 +36,16 @@ int main() {
 	//int size = 4;
 	//printf("The sum of the array is %d\n",arraySum(arr, size));
 
-	char* str = "abcd";
-	reverseString(str);
+	//char* str = "abcd";
+	//reverseString(str);
 
 
 	int arr[] = { 2,7,9,5 };
 	int size = 4;
 	printf("The maximum number is %d",findMax(arr, size));
 
-	//char str[] = { "heellooo" };
-	//printf("The number of the vowel in the array is %d", countVowels(str));
+	char str[] = { "heillouo" };
+	printf("\nThe number of the vowel in the array is %d", countVowels(str));
 
 
 	//char str[] = "hello";
@@ -58,6 +58,29 @@ int main() {
 	//printf("\nThe length of the string is %d", stringLength(str));
 
 	return 0;
+}
+
+//Count the number of vowels in a string using pointers:
+int countVowels(char* str) {
+
+	char vowel[] = { 'a','e','i','o','u' };
+	int counter = 0;
+	int vowelCounter = 0;
+	int result = 0;
+	int length = strlen(str);
+
+	while (counter < length) {
+		for (int i = 0; i < 5; i++) {
+			if (*str == vowel[i]) {
+				result++;
+			}
+		}
+		str = str + 1;
+		counter++;
+	}
+
+
+	return result;
 }
 
 //Find the maximum element in an array using pointers:
