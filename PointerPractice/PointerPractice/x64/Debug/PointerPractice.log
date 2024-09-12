@@ -1,4 +1,4 @@
 ﻿  PointerPractice.c
-C:\Users\PC\source\repos\PointerPractice\PointerPractice\PointerPractice\PointerPractice.c(67,15): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\PC\source\repos\PointerPractice\PointerPractice\PointerPractice\PointerPractice.c(110,2): warning C4098: 'swap': 'void' function returning a value
+C:\Users\PC\source\repos\PointerPractice\PointerPractice\PointerPractice\PointerPractice.c(84,15): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\PC\source\repos\PointerPractice\PointerPractice\PointerPractice\PointerPractice.c(127,2): warning C4098: 'swap': 'void' function returning a value
   PointerPractice.vcxproj -> C:\Users\PC\source\repos\PointerPractice\PointerPractice\x64\Debug\PointerPractice.exe

@@ -32,16 +32,17 @@ int main() {
 	int b = 2;
 	swap(&a, &b);
 
-	int arr[] = { 1,2,3,4 };
-	int size = 4;
-	printf("The sum of the array is %d\n",arraySum(arr, size));
+	//int arr[] = { 1,2,3,4 };
+	//int size = 4;
+	//printf("The sum of the array is %d\n",arraySum(arr, size));
 
 	char* str = "abcd";
 	reverseString(str);
 
 
-	//int arr[] = { 2,7,5,9 };
-	//findMax(arr, size);
+	int arr[] = { 2,7,9,5 };
+	int size = 4;
+	printf("The maximum number is %d",findMax(arr, size));
 
 	//char str[] = { "heellooo" };
 	//printf("The number of the vowel in the array is %d", countVowels(str));
@@ -57,6 +58,22 @@ int main() {
 	//printf("\nThe length of the string is %d", stringLength(str));
 
 	return 0;
+}
+
+//Find the maximum element in an array using pointers:
+int findMax(int* arr, int size) {
+
+	int counter = 0;
+	int max = *arr;
+	while (counter < size) {
+		if (max < *(arr + 1)) {
+			max = *(arr + 1);
+			arr = arr + 1;
+		}
+		counter++;
+	}
+
+	return max;
 }
 
 //Reverse a string using pointers:
