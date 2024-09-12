@@ -36,8 +36,9 @@ int main() {
 	int size = 4;
 	printf("The sum of the array is %d\n",arraySum(arr, size));
 
-	//char* str = "abcd";
-	//reverseString(str);
+	char* str = "abcd";
+	reverseString(str);
+
 
 	//int arr[] = { 2,7,5,9 };
 	//findMax(arr, size);
@@ -58,6 +59,31 @@ int main() {
 	return 0;
 }
 
+//Reverse a string using pointers:
+void reverseString(char* str) {
+	int counter = 0;
+	int strCounter = 0;
+	int finalCount = 0;
+	int length = strlen(str) ;
+	char* result = (char*)malloc(length+1*sizeof(char));
+
+
+	char* arrContain = result;
+
+	for (int i = length - 1; i >= 0; i--) {
+		*arrContain = str[i];
+		arrContain++;
+	}
+
+	*arrContain = '\0';
+
+
+	printf("%s\n", result);
+
+	free(result);
+
+	return;
+}
 
 int arraySum(int* arr, int size) {
 
