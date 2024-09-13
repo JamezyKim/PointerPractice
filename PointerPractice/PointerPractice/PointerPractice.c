@@ -15,9 +15,9 @@ void stringCopy(char* dest, char* src);
 
 int main() {
 
-	//char src[] = { "hello" };
-	//char dest[] = { "world"};
-	//concatenateStrings(dest,src);
+	char src[999] = { "hello" };
+	char dest[] = { "world"};
+	concatenateStrings(dest,src);
 
 
 	//char src[] = { "hello" };
@@ -44,8 +44,8 @@ int main() {
 	int size = 4;
 	printf("The maximum number is %d",findMax(arr, size));
 
-	char str[] = { "heillouo" };
-	printf("\nThe number of the vowel in the array is %d", countVowels(str));
+	//char str[] = { "heillouo" };
+	//printf("\nThe number of the vowel in the array is %d", countVowels(str));
 
 
 	//char str[] = "hello";
@@ -58,6 +58,28 @@ int main() {
 	//printf("\nThe length of the string is %d", stringLength(str));
 
 	return 0;
+}
+
+//Concatenate two strings using pointers:
+void concatenateStrings(char* dest, char* src) {
+	
+	char* orginalDest = src;
+
+	while (*src != '\0') {
+		src++;
+	}
+
+	while (*dest != '\0') {
+		*src = *dest;
+		dest ++;
+		src ++;
+	}
+
+	*src = '\0';
+
+	printf("The result is %s\n", orginalDest);
+
+	return;
 }
 
 //Count the number of vowels in a string using pointers:
