@@ -15,14 +15,16 @@ void stringCopy(char* dest, char* src);
 
 int main() {
 
-	char src[999] = { "hello" };
-	char dest[] = { "world"};
-	concatenateStrings(dest,src);
+	//char src[999] = { "hello" };
+	//char dest[] = { "world"};
+	//concatenateStrings(dest,src);
 
 
-	//char src[] = { "hello" };
-	//char* dest = (char*)malloc(sizeof(char));
-	//stringCopy(dest, src);
+	char src[] = "hello";
+	int length = strlen(src);
+	char* dest = (char*)malloc((length+1)*sizeof(char));
+	stringCopy(dest, src);
+	//free(dest);
 
 	//int n = 5;
 	//int arr[] = { 4,7,9,6,1 };
@@ -52,12 +54,31 @@ int main() {
 	//char ch = 'l';
 	//printf("\nThe result is %d",countOccurrences(str, ch));
 
-	char str[] = { "abba" };
-	printf("\nThe palindrome result is %d",isPalindrome(str));
+	//char str[] = { "abba" };
+	//printf("\nThe palindrome result is %d",isPalindrome(str));
 
-	printf("\nThe length of the string is %d", stringLength(str));
+	//printf("\nThe length of the string is %d", stringLength(str));
 
 	return 0;
+}
+
+//Copy one string to another using pointers:
+void stringCopy(char* dest, const char* src) {
+	char* destContain = dest;
+	int length = strlen(src);
+	int counter = 0;
+	while (counter < length) {
+		*dest = *src;
+		dest++;
+		src++;
+		counter++;
+	}
+	*dest = '\0';
+	printf("\ndest: ");
+
+	printf("%s", destContain);
+
+	printf("\n");
 }
 
 //Find the length of a string using pointers:
