@@ -12,6 +12,7 @@ int countOccurrences(char* str, char ch);
 bool isPalindrome(char* str);
 void concatenateStrings(char* dest, char* src);
 void stringCopy(char* dest, char* src);
+int factorial(int* n);
 
 int main() {
 
@@ -19,6 +20,9 @@ int main() {
 	//char dest[] = { "world"};
 	//concatenateStrings(dest,src);
 
+	int n = 4;
+	int originalValue = n;
+	printf("The factorial value of %d is %d",originalValue,factorial(&n));
 
 	char src[] = "hello";
 	int length = strlen(src);
@@ -60,6 +64,18 @@ int main() {
 	//printf("\nThe length of the string is %d", stringLength(str));
 
 	return 0;
+}
+
+//Find the factorial of a number using pointers:
+int factorial(int* n) {
+	int result = *n;
+	int counter = *n;
+	while (0 < counter -1) {
+		result *= *n-1;
+		counter--;
+		*n = *n - 1;
+	}
+	return result;
 }
 
 //Copy one string to another using pointers:
