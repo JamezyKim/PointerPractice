@@ -52,12 +52,55 @@ int main() {
 	//char ch = 'l';
 	//printf("\nThe result is %d",countOccurrences(str, ch));
 
-	//char str[] = { "abba" };
-	//printf("\n%d",isPalindrome(str));
+	char str[] = { "abba" };
+	printf("\nThe palindrome result is %d",isPalindrome(str));
 
-	//printf("\nThe length of the string is %d", stringLength(str));
+	printf("\nThe length of the string is %d", stringLength(str));
 
 	return 0;
+}
+
+//Find the length of a string using pointers:
+int stringLength(char* str) {
+
+}
+
+//Check if a string is a palindrome using pointers:
+bool isPalindrome(char* str) {
+	char* startFromBack = str;
+	int length = strlen(str);
+	int counterToBack = 0;
+	int counter = 0;
+	while (counterToBack < length - 1) {
+		startFromBack++;
+		counterToBack++;
+	}
+	while (counter < length - 1) {
+		if (*startFromBack != *str) {
+			return false;
+		}
+		startFromBack--;
+		str++;
+		counter++;
+	}
+	return true;
+}
+
+//Count the occurrences of a character in a string using pointers:
+int countOccurrences(char* str, char ch) {
+
+	int length = strlen(str);
+	int result = 0;
+
+	for (int i = 0; i < length - 1; i++) {
+		if (*str == ch) {
+			result++;
+		}
+		str++;
+
+	}
+
+	return result;
 }
 
 //Concatenate two strings using pointers:
