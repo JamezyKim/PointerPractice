@@ -1,7 +1,8 @@
 ﻿  PointerPractice.c
-C:\Users\PC\source\repos\PointerPractice\PointerPractice\PointerPractice\PointerPractice.c(66,15): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\PC\source\repos\PointerPractice\PointerPractice\PointerPractice\PointerPractice.c(87,15): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\PC\source\repos\PointerPractice\PointerPractice\PointerPractice\PointerPractice.c(130,15): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\PC\source\repos\PointerPractice\PointerPractice\PointerPractice\PointerPractice.c(167,15): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\PC\source\repos\PointerPractice\PointerPractice\PointerPractice\PointerPractice.c(210,2): warning C4098: 'swap': 'void' function returning a value
+C:\Users\PC\source\repos\PointerPractice\PointerPractice\PointerPractice\PointerPractice.c(58,45): warning C4013: 'stringLength' undefined; assuming extern returning int
+C:\Users\PC\source\repos\PointerPractice\PointerPractice\PointerPractice\PointerPractice.c(78,15): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\PC\source\repos\PointerPractice\PointerPractice\PointerPractice\PointerPractice.c(99,15): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\PC\source\repos\PointerPractice\PointerPractice\PointerPractice\PointerPractice.c(142,15): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\PC\source\repos\PointerPractice\PointerPractice\PointerPractice\PointerPractice.c(179,15): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\PC\source\repos\PointerPractice\PointerPractice\PointerPractice\PointerPractice.c(222,2): warning C4098: 'swap': 'void' function returning a value
   PointerPractice.vcxproj -> C:\Users\PC\source\repos\PointerPractice\PointerPractice\x64\Debug\PointerPractice.exe

@@ -63,6 +63,13 @@ int main() {
 //Find the length of a string using pointers:
 int stringLength(char* str) {
 
+	int result = 0;
+	while (*str != '\0') {
+		str++;
+		result++;
+	}
+
+	return result;
 }
 
 //Check if a string is a palindrome using pointers:
