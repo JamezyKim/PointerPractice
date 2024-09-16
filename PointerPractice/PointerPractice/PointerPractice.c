@@ -13,6 +13,8 @@ bool isPalindrome(char* str);
 void concatenateStrings(char* dest, char* src);
 void stringCopy(char* dest, char* src);
 int factorial(int* n);
+void bubbleSort(int* arr, int size);
+void reverseArray(int arr, int size);
 
 int main() {
 
@@ -46,9 +48,9 @@ int main() {
 	//reverseString(str);
 
 
-	int arr[] = { 2,7,9,5 };
-	int size = 4;
-	printf("The maximum number is %d",findMax(arr, size));
+	//int arr[] = { 2,7,9,5 };
+	//int size = 4;
+	//printf("The maximum number is %d",findMax(arr, size));
 
 	//char str[] = { "heillouo" };
 	//printf("\nThe number of the vowel in the array is %d", countVowels(str));
@@ -63,8 +65,75 @@ int main() {
 
 	//printf("\nThe length of the string is %d", stringLength(str));
 
+	int arr[] = { 2,7,1,43,9 };
+	int size = 5;
+
+	bubbleSort(arr, size);
+
+	void reverseArray(int arr, int size);
+
 	return 0;
 }
+
+char* stringString(char* source, char* target) {
+	int counter = 0;
+	char* sourceContain = source;
+	char* targetContain = target;
+	char result[100];
+	while (*sourceContain != '\0') {
+		if (*sourceContain == *targetContain) {
+			sourceContain++;
+			targetContain++;
+			*result = *sourceContain;
+		}
+		if (strcmp(sourceContain, targetContain) == 0) {
+			*result = *sourceContain;
+			sourceContain++;
+		}
+	}
+	return result;
+}
+
+////Reverse an array using pointers:
+//void reverseArray(int* arr, int size) {
+//	int counter = 0;
+//	int midPoint = size / 2;
+//	int startFromBack = *arr;
+//	while (counter < size - 1) {
+//		startFromBack++;
+//		counter++;
+//	}
+//	counter = 0;
+//	while (counter < midPoint) {
+//		int temp = *arr;
+//		*arr = *startFromBack;
+//		*startFromBack = temp;
+//	}
+//
+//	for (int i = 0; i < size; i++) {
+//		printf("%d", *arr);
+//		arr++;
+//	}
+//
+//}
+//
+////Sort an array of integers using pointers:
+//void bubbleSort(int* arr, int size) {
+//	arr = arr + 1;
+//	for (int i = 0; i < size - 1; i++) {
+//		for (int j = 0; j < size - 1; j++) {
+//			if (*(arr + j) < *(arr + j + 1)) {
+//				int temp = *(arr + j);
+//				*(arr + j) = *(arr + j + 1);
+//				*(arr + j + 1) = temp;
+//			}
+//		}
+//	}
+//	for (int z = 0; z < size; z++) {
+//		printf("%d,", *arr);
+//		arr++;
+//	}
+//}
 
 //Find the factorial of a number using pointers:
 int factorial(int* n) {

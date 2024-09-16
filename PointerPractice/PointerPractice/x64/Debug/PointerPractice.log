@@ -1,10 +1,10 @@
 ﻿  PointerPractice.c
-C:\Users\PC\source\repos\PointerPractice\PointerPractice\PointerPractice\PointerPractice.c(28,15): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\PC\source\repos\PointerPractice\PointerPractice\PointerPractice\PointerPractice.c(82,41): warning C4028: formal parameter 2 different from declaration
-C:\Users\PC\source\repos\PointerPractice\PointerPractice\PointerPractice\PointerPractice.c(84,15): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\PC\source\repos\PointerPractice\PointerPractice\PointerPractice\PointerPractice.c(115,15): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\PC\source\repos\PointerPractice\PointerPractice\PointerPractice\PointerPractice.c(136,15): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\PC\source\repos\PointerPractice\PointerPractice\PointerPractice\PointerPractice.c(179,15): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\PC\source\repos\PointerPractice\PointerPractice\PointerPractice\PointerPractice.c(216,15): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\PC\source\repos\PointerPractice\PointerPractice\PointerPractice\PointerPractice.c(259,2): warning C4098: 'swap': 'void' function returning a value
+C:\Users\PC\source\repos\PointerPractice\PointerPractice\PointerPractice\PointerPractice.c(29,15): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\PC\source\repos\PointerPractice\PointerPractice\PointerPractice\PointerPractice.c(107,41): warning C4028: formal parameter 2 different from declaration
+C:\Users\PC\source\repos\PointerPractice\PointerPractice\PointerPractice\PointerPractice.c(109,15): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\PC\source\repos\PointerPractice\PointerPractice\PointerPractice\PointerPractice.c(140,15): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\PC\source\repos\PointerPractice\PointerPractice\PointerPractice\PointerPractice.c(161,15): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\PC\source\repos\PointerPractice\PointerPractice\PointerPractice\PointerPractice.c(204,15): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\PC\source\repos\PointerPractice\PointerPractice\PointerPractice\PointerPractice.c(241,15): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\PC\source\repos\PointerPractice\PointerPractice\PointerPractice\PointerPractice.c(284,2): warning C4098: 'swap': 'void' function returning a value
   PointerPractice.vcxproj -> C:\Users\PC\source\repos\PointerPractice\PointerPractice\x64\Debug\PointerPractice.exe
